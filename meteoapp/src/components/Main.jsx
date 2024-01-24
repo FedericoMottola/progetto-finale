@@ -36,7 +36,8 @@ const Main = () => {
         <div className='app root'>
            
         <div className="search">
-        <small>{uppercaseFormattedDate} {formattedTime}</small>
+        <div>{uppercaseFormattedDate} {formattedTime}</div>
+        <div>
         <input
         value={search} onChange={(e) => setSearch(e.target.value)}
         placeholder='Inserisci la tua località'
@@ -45,7 +46,7 @@ const Main = () => {
  
          
             <button onClick={handleSearch} className="btn btn-success">Cerca</button>
-            
+            </div>
         </div>
         </div>
         

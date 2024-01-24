@@ -36,7 +36,7 @@ const hourlyForecastData = weatherData.list.slice(0, 3); // Prendi solo i primi 
 
 return (
     <div className='small'>
-    <small style={{ whiteSpace: 'nowrap' }}>Previsioni orarie:</small>
+    <p style={{ whiteSpace: 'nowrap' }}>Previsioni orarie:</p>
     <hr />
     {hourlyForecastData.map((hour, index) => (
       <div key={index} style={{ display: 'flex', alignItems: 'center'}}>
