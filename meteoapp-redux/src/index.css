@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+p {
+  font-family: 'Grape Nuts', cursive;
+  font-size: 2.5rem;
+}
+
+.container h1 {
+  font-size: 1.7em;
+}
+
+.app {
+  width: 100%;
+  height: 100 vh;
+  position: relative;
+}
+
+.root {
+  content: '';
+  background: url('./assets/pexels-johannes-plenio-1118873.jpg') no-repeat center center/cover;
+  position:absolute;
+  width:100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  font-family: system-ui, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color-scheme: light dark;
+  color: rgba(248, 247, 247, 0.87);
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  content: '';
+  background: url('./assets/pexels-johannes-plenio-1118873.jpg') no-repeat center center/cover;
+  position:absolute;
+  width:100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  font-family: system-ui, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color-scheme: light dark;
+  color: rgba(248, 247, 247, 0.87);
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.search{
+  text-align: center;
+  padding: 1 rem;
+  margin-top: 0.2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+input {
+  padding: .0.2rem ;
+  font-size: 0.3rem;
+  font-family: 'Grape Nuts', cursive;
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(248, 247, 247, 0.87);
+}
+
+
+.container {
+  max-width: 700px;
+  height: 700px;
+  margin: auto;
+  padding: 0 1rem;
+  position: relative;
+  top: 12%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  
+}
+
+.app .top {
+ 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%; 
+  margin: 0 auto;
+  padding-top: -0.3rem;
+  
+}
+.app .location {
+  width: 23%; 
+  background-color: rgb(255, 255, 255, 0.3);
+  border-radius: 20px;
+  text-align: center;
+}
+.app .chart {
+  height: 315px;
+  width: 45%;
+  text-align: center;
+  background-color: rgb( 255, 255, 255, 0.3);
+  border-radius: 20px;
+  display: flex;
+  margin-top: 20px;
+}
+
+.app .half {
+  width: 23%; 
+  text-align: center;
+  background-color: rgb(255, 255, 255, 0.3);
+  border-radius: 20px;
+  margin-top: 25px;
+}
+
+
+
+.app .bottom {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 100%;
+  margin: 1.9rem auto;
+  padding: 0.5rem;
+  border-radius: 20px;
+  background-color: rgb( 255, 255, 255, 0.3);
+}
+
+
+.bold{
+  font-weight: 700;
+}
+ 
+.app button  {
+  margin: 0.4em;
+  margin-top: -0.1em;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.5em 0.7em;
+  font-size: 0.8em;
+  font-weight: 300;
+  font-family: 'Grape Nuts', cursive;
+  background: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+.app button:hover {
+  
+  background:rgba(248, 247, 247, 0.2) ;
+}
+
+.weather-icon {
+  width: 90px;
+  height: 90px;
+}
+
+.app small {
+  font-size: 1.2em;
+  padding: 560px;
+  padding-left: 0px;
+}
+
+
+.results {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.icon {
+  margin-right: 40px;
+}
+
+.text-container p:nth-of-type(2) {
+  font-size:  1.2em;
+}
+
+.small p {
+  margin: 10px 10px 10px;;
+  font-size:  1em;
+}
+
+.small small {
+  font-family: 'Grape Nuts', cursive;
+  font-size:  1.5em;
+  padding: 100px 100px 100px 0;
+}
+
+.small hr {
+  margin: 10px 0;
+}
+
+/* Alcuni stili globali rimossi per brevità */
+
+/* Stili per dispositivi mobili con larghezza massima di 768px */
+@media screen and (max-width: 768px) {
+ 
+  .root {
+    height: 100%vh;
+    
+    background-image: linear-gradient(to bottom right, #3498db, #2ecc71) no-repeat center center/cover;
+    width: 100%;
+    /* background-color: blue; */
+  }
+:root{
+  height: 100%vh;
+  background-image: linear-gradient(to bottom right, #3498db, #2ecc71) no-repeat center center/cover;
+    width: 100%;
+   
+    /* background-color: blue; */
+}
+
+  .app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh; /* Altezza minima della viewport */
+  margin: 0; /* Rimuovi il margine per evitare spazi vuoti */
+  
+  /* Aggiungi altre proprietà dello sfondo se necessario */
+    
+  }
+
+  .container {
+    max-width: 100%;
+   
+  }
+
+  .app .location,
+  .app .half,
+  .app .bottom,
+  .app .search
+   {
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .app .top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70em;
+  }
+
+  .app .chart {
+    display: none;
+  }
+
+
+  p,
+  small,
+  h1 {
+    font-size: 0.5em;
+   
+  }
+
+  .location p {
+    font-size: 2em;
+  }
+  .bold {
+    font-size:  2em;
+  }
+
+  .small div {
+    flex-direction: column;
+  }
+  .small p {
+    font-size: 2em;
+  }
+}
