@@ -33,6 +33,7 @@ const Job = ({ data }) => {
           Aggiungi ai preferiti
         </Button>
       </Col>
+      <Row>
       <Col xs={12} md={9} className="text-center flex-column">
         <Link to={`/${data.company_name}`} className="company-name" >
           {data.company_name}
@@ -47,7 +48,8 @@ const Job = ({ data }) => {
           {data.title}
         </a>
       </Col>
-    </Row>
+      </Row>
+      </Row>
   );
 };
 
